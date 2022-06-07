@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel= "stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Nome</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="" class="form-text">
+            Tem certeza que quer fazer parte disso?
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Nascimento</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >aprovo vender a minha alma para o animes</label
+          >
+        </div>
+        <button type="submit" onclick="myFunction" class="btn btn-primary">
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function myFunction() {
+        var popup = document.getElementsByClassName(".swal2-container");
+        popup.classList.toogle("show");
+      }
+      Swal.fire({
+        title: "Parabéns agora você também é um otakinho!",
+        text: "",
+        imageUrl: "Naruto_fazendo_pose_nice_guy.webp",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "Custom image",
+      });
+    </script>
+  </body>
+</html>
